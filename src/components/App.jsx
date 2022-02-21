@@ -1,5 +1,5 @@
-import { Example } from "./Exemple";
-import {Reader} from "./Reader/Reader";
+import  Example  from "./Exemple";
+import Reader from "./Reader/Reader";
 import publication from "../publication.json";
 import {
   BrowserRouter,
