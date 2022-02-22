@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from 'react';
-import { Link } from 'react-router-dom';
+import Navigation from '../Navigation/Navigation';
 import Controls from './Controls';
 import Publication from './Publication';
 const LOCAL_KEY = 'reader_item_index';
@@ -33,7 +33,7 @@ export default function Reader({ items }) {
     const totalItems = items.length;
     return (
         <>
-            <Link to={`/`}>Video</Link>
+            <Navigation />
             <Controls current={index + 1} onChange={changeIndex} total={totalItems} />
             <p>
                 {index + 1}/{totalItems}

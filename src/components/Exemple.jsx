@@ -2,13 +2,13 @@ import { useState } from 'react';
 import  Player  from './Player/Player';
 import videos from "../videos.json"
 import { VideoList } from './VideoList/VideoList';
-import { Link } from 'react-router-dom';
+import Navigation from './Navigation/Navigation';
 
 export default function Example(){
         const[selectedVideo, setSelectedVideo]=useState(null);
     return(
         <>
-          <Link to={`reader`}>Reader</Link>
+        <Navigation/>
         <div style={{ padding: 24 }}>
         <h1>Selected video:{selectedVideo}</h1>
         <VideoList videos={videos} onSelect={setSelectedVideo}/>
